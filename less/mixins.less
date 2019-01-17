@@ -18,3 +18,29 @@
   width: @width;
   padding: @padding;
 }
+
+.take-a-walk(@animation-time: 1s) {
+  animation: walk-viewport 4s;
+  width: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: margin @animation-time;
+  @keyframes walk-viewport {
+    25% {
+      margin: 0 0 0 80%;
+    }
+
+    50% {
+      margin: 80% 0 0 80%;
+    }
+
+    75% {
+      margin: 80% 0 0 0;
+    }
+
+    100% {
+      margin: 0 0 0 0;
+    }
+  }
+}
