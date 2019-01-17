@@ -7,10 +7,10 @@ header {
   align-items: center;
 
   @media @mobile {
-    width: 100%;
     flex-direction: column;
     justify-content: flex-end;
     margin: 0;
+    .fill-width;
 
     h1 {
       font-size: 3rem;
@@ -49,8 +49,7 @@ hr {
       padding-right: 1%;
 
       @media @mobile {
-        width: 100%;
-        padding: 0;
+        .fill-width;
       }
     }
 
@@ -60,15 +59,14 @@ hr {
 
       @media @mobile {
         text-align: center;
-        width: 100%;
-        padding: 0;
+        .fill-width;
       }
 
       img {
         border-radius: 10px;
 
         @media @mobile {
-          width: 100%;
+          .fill-width;
         }
       }
     }
@@ -97,16 +95,14 @@ hr {
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
     @media @mobile {
-      width: 100%;
+      .fill-width;
     }
+
     img {
       border-radius: 10px;
 
-      @media @mobile {
-        width: 100%;
-      }
+      .fill-width;
     }
   }
 
@@ -127,8 +123,8 @@ hr {
       .default-buttons;
 
       @media @mobile {
-        width: 80%;
-        .default-buttons(@bgcolor: #17A2B8; @width: 100%)
+        .fill-width(@width: 80%);
+        .default-buttons(@bgcolor: #17A2B8; @width: 100%);
       }
     }
   }
